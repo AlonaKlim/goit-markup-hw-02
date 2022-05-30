@@ -1,167 +1,166 @@
 :root {
-    --brand-color: #757575;
-    --bg-color: #E5E5E5;
-    --selection-color: #2196F3;
+  --brand-color: #757575;
+  --bg-color: #e5e5e5;
+  --selection-color: #2196f3;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    color: var(--brand-color);
-    background: var(--bg-color);
+  font-family: "Roboto", sans-serif;
+  color: var(--brand-color);
+  background: var(--bg-color);
 }
 
 .header {
-    background-color: #fff;
+  background-color: #fff;
 }
 .link {
-    text-decoration: none;
-    color: var(--brand-color);
-    font-weight: 500;
-    font-size: 14px;
+  text-decoration: none;
+  color: var(--brand-color);
+  font-weight: 500;
+  font-size: 14px;
 }
 
-.link:hover, 
+.link:hover,
 .link:focus {
-    color: var(--selection-color);
+  color: var(--selection-color);
 }
 
 .menu {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .menu-link {
-    color: #212121;
-    font-weight: 500;
-    font-size: 14px;
+  color: #212121;
+  font-weight: 500;
+  font-size: 14px;
 }
 
 .btn {
-    cursor: pointer;
-    background: #F5F4FA;
-    font-weight: 500;
-    font-size: 16px;
-    text-align: center;
-    color: #212121;
-    border-radius: 4px;
-    
+  cursor: pointer;
+  background: #f5f4fa;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #212121;
+  border-radius: 4px;
 }
 
 .active:hover,
 .active:focus {
-    color: #FFFFFF;
-    background-color: var(--selection-color);
+  color: #ffffff;
+  background-color: var(--selection-color);
 }
 
 .logo {
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    color: #000000;
-    text-decoration: none;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  color: #000000;
+  text-decoration: none;
 }
 
 .logo > span {
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    color: var(--selection-color);
-    }
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--selection-color);
+}
 
 .promo {
-    background-color: #2F303A;
+  background-color: #2f303a;
 }
 
 .title {
-    font-family: 'Roboto';
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .button {
-    width: 200px;
-    height: 50px;
-    background: var(--selection-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    font-weight: 700;
-    font-size: 16px;
-    color: #FFFFFF;
+  width: 200px;
+  height: 50px;
+  background: var(--selection-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffffff;
 }
 
 .subtitle {
-    font-weight: 700;
-    font-size: 14px;
-    text-transform: uppercase;
-    color: #212121;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #212121;
 }
 
 .descr {
-    font-size: 14px;
-    line-height: 1.7;
+  font-size: 14px;
+  line-height: 1.7;
 }
 
 .work {
-    font-weight: 700;
-    font-size: 36px;
-    text-align: center;
-    color: #212121;
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  color: #212121;
 }
 
 .team {
-    background-color: #F5F4FA;
+  background-color: #f5f4fa;
 }
 
 .team-title {
-    font-weight: 700;
-    font-size: 36px;
-    text-align: center;
-    color: #212121;
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  color: #212121;
 }
 
 .team-list {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .team-subtitle {
-    font-weight: 500;
-    font-size: 16px;
-    color: #212121;
+  font-weight: 500;
+  font-size: 16px;
+  color: #212121;
 }
 
 .team-text {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .list {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .footer {
-    background-color: #2F303A;
+  background-color: #2f303a;
 }
 .contacts {
-    font-size: 14px;
-    color: #FFFFFF;
+  font-size: 14px;
+  color: #ffffff;
 }
 footer > .link {
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 footer > .logo {
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 .card-title {
-    font-weight: 700;
-    font-size: 18px;
-    color: #212121;
+  font-weight: 700;
+  font-size: 18px;
+  color: #212121;
 }
 
 .card-text {
-    font-size: 16px;
+  font-size: 16px;
 }
