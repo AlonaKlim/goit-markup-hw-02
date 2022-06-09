@@ -1,58 +1,36 @@
 :root {
-  --brand-color: #757575;
+  --primary-font-family: 'Roboto', sans-serif;
+  --secondary-font-family: 'Raleway',sans-serif;
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
   --bg-color: #e5e5e5;
-  --selection-color: #2196f3;
+  --accent-color: #2196f3;
+  --white-color: #ffffff;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  color: var(--brand-color);
+  font-family: var(--primary-font-family);
+  color: var(--primary-text-color);
   background: var(--bg-color);
 }
 
 .header {
-  background-color: #fff;
-}
-.link {
-  text-decoration: none;
-  color: var(--brand-color);
-  font-weight: 500;
-  font-size: 14px;
-}
-
-.link:hover,
-.link:focus {
-  color: var(--selection-color);
-}
-
-.menu {
-  list-style-type: none;
-}
-
-.menu-link {
-  color: #212121;
-  font-weight: 500;
-  font-size: 14px;
-}
-
-.btn {
-  cursor: pointer;
-  background: #f5f4fa;
-  font-weight: 500;
-  font-size: 16px;
-  text-align: center;
-  color: #212121;
-  border-radius: 4px;
-}
-
-.active:hover,
-.active:focus {
-  color: #ffffff;
-  background-color: var(--selection-color);
+  background-color: var(--white-color);
 }
 
 .logo {
-  font-family: "Raleway";
+  font-family: var(--secondary-font-family);
   font-weight: 700;
   font-size: 26px;
   color: #000000;
@@ -60,54 +38,74 @@ body {
 }
 
 .logo > span {
-  font-family: "Raleway";
+  font-family: var(--secondary-font-family);
   font-weight: 700;
   font-size: 26px;
-  color: var(--selection-color);
+  color: var(--accent-color);
 }
 
-.promo {
+.menu-link {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
+.hero {
   background-color: #2f303a;
 }
 
-.title {
-  font-family: "Roboto";
-  font-weight: 900;
+.hero .title {
   font-size: 44px;
+  color: var(--white-color);
+  font-weight: 900;
   line-height: 1.36;
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
 }
 
 .button {
   width: 200px;
   height: 50px;
-  background: var(--selection-color);
+  background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
-  color: #ffffff;
+  color: var(--white-color);
 }
 
-.subtitle {
+.hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 0 !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.features-subtitle {
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--secondary-text-color);
 }
 
-.descr {
+.features-descr {
   font-size: 14px;
   line-height: 1.7;
 }
 
-.work {
+.work-title {
   font-weight: 700;
   font-size: 36px;
   text-align: center;
-  color: #212121;
+  color: var(--secondary-text-color);
 }
 
 .team {
@@ -118,47 +116,57 @@ body {
   font-weight: 700;
   font-size: 36px;
   text-align: center;
-  color: #212121;
-}
-
-.team-list {
-  list-style-type: none;
+  color: var(--secondary-text-color);
 }
 
 .team-subtitle {
   font-weight: 500;
   font-size: 16px;
-  color: #212121;
+  color: var(--secondary-text-color);
 }
 
 .team-text {
   font-size: 16px;
 }
 
-.list {
-  list-style-type: none;
-}
-
 .footer {
   background-color: #2f303a;
 }
-.contacts {
+
+.footer .contacts {
   font-size: 14px;
-  color: #ffffff;
+  color: var(--white-color);
 }
-footer > .link {
+
+.footer .link {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.6);
 }
 
-footer > .logo {
-  color: #ffffff;
+.footer .logo {
+  color: var(--white-color);
+}
+
+.btn {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  background: #f5f4fa;
+  color: var(--secondary-text-color);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.active:hover,
+.active:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
 }
 
 .card-title {
   font-weight: 700;
   font-size: 18px;
-  color: #212121;
+  color: var(--secondary-text-color);
 }
 
 .card-text {
