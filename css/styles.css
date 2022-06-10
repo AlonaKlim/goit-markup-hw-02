@@ -3,9 +3,10 @@
   --secondary-font-family: 'Raleway',sans-serif;
   --primary-text-color: #757575;
   --secondary-text-color: #212121;
-  --bg-color: #e5e5e5;
+  --primary-white-color: #ffffff;
+  --secondary-bg-color: #e5e5e5;
   --accent-color: #2196f3;
-  --white-color: #ffffff;
+ 
 }
 
 .list {
@@ -22,11 +23,7 @@
 body {
   font-family: var(--primary-font-family);
   color: var(--primary-text-color);
-  background: var(--bg-color);
-}
-
-.header {
-  background-color: var(--white-color);
+  background: var(--primary-white-color);
 }
 
 .logo {
@@ -61,7 +58,7 @@ body {
 
 .hero .title {
   font-size: 44px;
-  color: var(--white-color);
+  color: var(--primary-white-color);
   font-weight: 900;
   line-height: 1.36;
   text-align: center;
@@ -76,7 +73,8 @@ body {
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
-  color: var(--white-color);
+  color: var(--primary-white-color);
+  cursor: pointer;
 }
 
 .hidden {
@@ -89,6 +87,9 @@ body {
   overflow: hidden;
 }
 
+.features, .work {
+  background-color: var(--secondary-bg-color);
+}
 .features-subtitle {
   font-weight: 700;
   font-size: 14px;
@@ -135,18 +136,28 @@ body {
 
 .footer .contacts {
   font-size: 14px;
-  color: var(--white-color);
+  color: var(--primary-white-color);
+  font-style: normal;
 }
 
 .footer .link {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+}
+
+.footer .link:hover,.link:focus {
+  color: var(--accent-color);
 }
 
 .footer .logo {
-  color: var(--white-color);
+  color: var(--primary-white-color);
 }
 
+.portfolio {
+  background-color: var(--secondary-bg-color);
+}
+ 
 .btn {
   font-weight: 500;
   font-size: 16px;
@@ -159,7 +170,7 @@ body {
 
 .active:hover,
 .active:focus {
-  color: var(--white-color);
+  color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
 
